@@ -1,0 +1,123 @@
+@font-face {
+    font-family: Fraunces;
+    src: url(fonts/Fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf)format(truetype);
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(fonts/Montserrat/Montserrat-VariableFont_wght.ttf)format(truetype);
+}
+.mobile{
+    display: block;
+}
+.desktop{
+    display: none;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(30, 38%, 92%);
+    font-family: Montserrat;
+    font-size: 14px;
+}
+main{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    padding: 0 20px 20px 20px;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 100%);
+}
+.imgM{
+    width: 340px;
+    border-radius: 10px 10px 0 0;
+}
+p.class{
+    padding: 20px 0 10px 0;
+    letter-spacing: 4px;
+}
+h1{
+    font-family: Fraunces;
+    font-size: 33px;
+    font-weight: 700;
+    line-height: 100%;
+}
+p.info{
+    padding: 15px 0 20px 0;
+    line-height: 150%;
+}
+.price{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding-bottom: 15px;
+}
+h2{
+    font-family: Fraunces;
+    font-size: 33px;
+    font-weight: 700;
+    color: hsl(158, 36%, 37%);
+}
+h3{
+    font-family: Fraunces;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: line-through;
+}
+a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 48px;
+    font-size: 14px;
+    border-radius: 8px;
+    font-weight: 600;
+    background-color: hsl(158, 36%, 37%);
+    gap: 5px;
+}
+a:active{
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+a:hover{
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(158, 36%, 17%);
+}
+.hug{
+    margin: 0;
+    padding: 0p;
+}
+@media screen and (min-width: 1440px){
+    .desktop{
+        display: block;
+    }
+    .mobile{
+        display: none;
+    }
+    main{
+        flex-direction: row;
+        width: 600px;
+        height: 450px;
+        padding: 0;
+    }
+    .imgD{
+        width: 300px;
+        border-radius: 10px 0 0 10px;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        height: 390px;
+        padding: 40px 32px 40px 32px;
+        justify-content: space-between;
+        gap: 0;
+    }
+    p.class{
+        padding: 0 0 10px 0;
+    }
+}
